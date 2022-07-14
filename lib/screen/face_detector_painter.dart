@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
@@ -50,7 +49,6 @@ class FaceDetectorPainter extends CustomPainter {
       ..color = Colors.orange;
 
     for (final Face face in faces) {
-
       canvas.drawRect(
         Rect.fromLTRB(
           translateX(face.boundingBox.left, rotation, size, absoluteImageSize),
@@ -92,7 +90,6 @@ class FaceDetectorPainter extends CustomPainter {
       paintContour(FaceContourType.noseBottom);
       paintContour(FaceContourType.leftCheek);
       paintContour(FaceContourType.rightCheek);
-
     }
   }
 

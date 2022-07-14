@@ -5,6 +5,8 @@ import 'camera_view.dart';
 import 'face_detector_painter.dart';
 
 class Home extends StatefulWidget {
+  const Home({Key? key}) : super(key: key);
+
   @override
   _Home createState() => _Home();
 }
